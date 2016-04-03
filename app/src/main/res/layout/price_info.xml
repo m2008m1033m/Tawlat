@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:paddingTop="30dp"
+             android:paddingLeft="20dp"
+             android:paddingStart="20dp"
+             android:paddingEnd="20dp"
+             android:paddingRight="20dp"
+             android:stretchColumns="0,1">
+
+    <TableRow>
+        <TextView
+            android:text="@string/$"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:text="@string/$_details"
+            android:textColor="@color/black"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="@string/$$"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:text="@string/$$_details"
+            android:textColor="@color/black"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="@string/$$$"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:text="@string/$$$_details"
+            android:textColor="@color/black"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="@string/$$$$"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:text="@string/$$$$_details"
+            android:textColor="@color/black"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="@string/$$$$$"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:text="@string/$$$$$_details"
+            android:textColor="@color/black"/>
+    </TableRow>
+
+    <TableRow android:layout_marginTop="15dp">
+        <TextView
+            android:layout_span="2"
+            android:text="@string/the_guidelines_above_demonstrate"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+    </TableRow>
+
+</TableLayout><!-- From: file:/Users/mohammed/Desktop/Tawlat/Testing/Tawlat/app/src/main/res/layout/pricing_info.xml -->

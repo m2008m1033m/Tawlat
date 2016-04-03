@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.tawlat"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 2
+        versionName "1.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':libs:mupdf')
+    compile('com.github.ozodrukh:CircularReveal:1.3.1@aar') {
+        transitive = true;
+    }
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    //compile 'ch.acra:acra:4.5.0'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+    compile 'com.squareup.picasso:picasso:2.3.3'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    compile 'com.google.android.gms:play-services-maps:8.4.0'
+
+}

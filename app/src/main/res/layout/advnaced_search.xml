@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+
+                <Switch
+                    android:id="@+id/tawlat_partner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/show_tawlat_partners_only"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@mipmap/ic_location_on_grey600_18dp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@mipmap/ic_location_on_grey600_18dp"
+                    android:lines="1"
+                    android:text="@string/location"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <com.tawlat.customViews.MultiSpinner
+                    android:id="@+id/locations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/orange_border"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@mipmap/ic_restaurant_menu_grey600_18dp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@mipmap/ic_thumb_up_grey600_18dp"
+                    android:lines="1"
+                    android:text="@string/cuisine"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+                <com.tawlat.customViews.MultiSpinner
+                    android:id="@+id/cuisine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/orange_border"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@mipmap/ic_thumb_up_grey600_18dp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@mipmap/ic_thumb_up_grey600_18dp"
+                    android:lines="1"
+                    android:text="@string/good_for"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <com.tawlat.customViews.MultiSpinner
+                    android:id="@+id/good_for"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/orange_border"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@mipmap/ic_attach_money_grey600_18dp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@mipmap/ic_attach_money_grey600_18dp"
+                    android:lines="1"
+                    android:text="@string/price"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <com.tawlat.customViews.MultiSpinner
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/orange_border"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@mipmap/ic_access_time_grey600_18dp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@mipmap/ic_attach_money_grey600_18dp"
+                    android:lines="1"
+                    android:text="@string/time"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/orange_border"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@mipmap/ic_event_grey600_18dp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@mipmap/ic_event_grey600_18dp"
+                    android:lines="1"
+                    android:text="@string/date"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/orange_border"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/orange_dark"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@mipmap/ic_group_grey600_18dp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@mipmap/ic_group_grey600_18dp"
+                    android:lines="1"
+                    android:text="@string/people"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/people"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/orange_border"/>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/orangebutton"
+            android:text="@string/find_a_table"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    </FrameLayout>
+
+</LinearLayout>

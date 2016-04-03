@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/layout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/orange"
+             android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/how_it_works_activity_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/how_it_works_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="100dp"
+        android:text="@string/skip_underlined"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/how_it_works_watch_the_video"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:background="@drawable/crystal_button"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="@string/watch_the_video"
+        android:layout_marginTop="20dp"/>
+
+</FrameLayout><!-- From: file:/Users/mohammed/Desktop/Tawlat/Testing/Tawlat/app/src/main/res/layout/how_it_works_activity.xml -->

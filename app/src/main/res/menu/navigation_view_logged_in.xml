@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:checked="true"
+            android:icon="@mipmap/ic_home_black_24dp"
+            android:title="@string/home"/>
+
+        <item
+            android:id="@+id/near_me"
+            android:checked="false"
+            android:icon="@mipmap/ic_location_on_black_24dp"
+            android:title="@string/near_me"/>
+
+        <item
+            android:id="@+id/my_account"
+            android:checked="false"
+            android:icon="@mipmap/ic_account_box_black_24dp"
+            android:title="@string/my_account"/>
+
+        <item
+            android:id="@+id/my_bookings"
+            android:checked="false"
+            android:icon="@mipmap/ic_book_black_24dp"
+            android:title="@string/my_bookings"/>
+
+        <item
+            android:id="@+id/my_vouchers"
+            android:checked="false"
+            android:icon="@mipmap/ic_wallet_giftcard_black_24dp"
+            android:title="@string/my_vouchers"/>
+
+        <item
+            android:id="@+id/my_favorites"
+            android:checked="false"
+            android:icon="@mipmap/ic_favorite_black_24dp"
+            android:title="@string/my_favorites"/>
+
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/settings"
+            android:checked="false"
+            android:icon="@mipmap/ic_settings_black_24dp"
+            android:title="@string/settings"/>
+
+        <item
+            android:id="@+id/how_it_works"
+            android:checked="false"
+            android:icon="@mipmap/ic_info_black_24dp"
+            android:title="@string/how_it_works"/>
+
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:icon="@mipmap/ic_lock_black_24dp"
+            android:title="@string/logout"/>
+
+    </group>
+</menu>

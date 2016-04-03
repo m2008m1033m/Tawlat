@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/venue_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/loading"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/ic_location_on_grey600_18dp"
+                android:drawablePadding="5dp"
+                android:drawableStart="@mipmap/ic_location_on_grey600_18dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/loading"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <!--Section Indicator-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/section_1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:text="@string/_1"
+                    android:textColor="@color/white"/>
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/section_2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/circle_outline"
+                    android:gravity="center"
+                    android:text="@string/_2"
+                    android:textColor="@color/black"/>
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/section_3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/circle_outline"
+                    android:gravity="center"
+                    android:text="@string/_3"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <!--End of Section Indicator-->
+
+            <TextView
+                android:id="@+id/section_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/orange"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/booking_info"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/right_left_bottom_orange"
+                android:paddingBottom="15dp">
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/proceed_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/orangebutton"
+        android:text="@string/proceed"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+
+</RelativeLayout>

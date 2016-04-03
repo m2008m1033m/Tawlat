@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/nvh_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/material_design_navigation_drawer_header"
+    >
+
+    <LinearLayout
+        android:id="@+id/logged_out_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_text_inverted"/>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/orangebutton"
+            android:padding="10dp"
+            android:text="@string/sign_up_and_get_24_aed"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/logged_in_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.tawlat.customViews.RoundImageView
+                    android:id="@+id/user_photo"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/no_avatar"/>
+
+                <TextView
+                    android:id="@+id/points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:background="@drawable/rounded_points_bg"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:padding="3dp"
+                    android:text="@string/loading"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="@string/loading"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:clickable="true"
+                    android:drawableLeft="@mipmap/ic_location_on_white_18dp"
+                    android:drawableStart="@mipmap/ic_location_on_white_18dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="@string/loading"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

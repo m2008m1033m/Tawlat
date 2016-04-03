@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#333333</color>
+    <color name="colorPrimaryDark">#252525</color>
+    <color name="colorAccent">#ea8243</color>
+
+    <color name="orange_lighter">#FFE0B2</color>
+    <color name="orange_light">#FFCC80</color>
+    <color name="orange">#ea8243</color>
+    <color name="orange_dark">#cf7138</color>
+    <color name="black_light">#717171</color>
+    <color name="black">#333333</color>
+    <color name="black_dark">#252525</color>
+    <color name="white">#ffffff</color>
+    <color name="blue_light">#ff4869a6</color>
+    <color name="blue">#ff2e4fb7</color>
+    <color name="grey_light">#EEEEEE</color>
+    <color name="grey">#E0E0E0</color>
+    <color name="grey_dark">#9E9E9E</color>
+
+    <color name="red">#e65f6d</color>
+    <color name="red_dark">#cd4c59</color>
+
+    <color name="green">#4CAF50</color>
+
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+</resources>

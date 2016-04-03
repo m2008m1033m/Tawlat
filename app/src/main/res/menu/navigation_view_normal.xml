@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:checked="true"
+            android:icon="@mipmap/ic_home_black_24dp"
+            android:title="@string/home"/>
+
+        <item
+            android:id="@+id/near_me"
+            android:checked="false"
+            android:icon="@mipmap/ic_location_on_black_24dp"
+            android:title="@string/near_me"/>
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/settings"
+            android:checked="false"
+            android:icon="@mipmap/ic_settings_black_24dp"
+            android:title="@string/settings"/>
+
+        <item
+            android:id="@+id/how_it_works"
+            android:checked="false"
+            android:icon="@mipmap/ic_info_black_24dp"
+            android:title="@string/how_it_works"/>
+
+        <item
+            android:id="@+id/login"
+            android:checked="false"
+            android:icon="@mipmap/ic_lock_black_24dp"
+            android:title="@string/login"/>
+
+    </group>
+</menu>

@@ -1,0 +1,10 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:ellipsize="marquee"
+    android:gravity="center"
+    android:singleLine="true"
+    android:textColor="@color/orange_dark"
+    android:textSize="16sp"/>

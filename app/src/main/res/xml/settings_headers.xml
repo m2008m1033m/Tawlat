@@ -1,0 +1,18 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header
+        android:id="@+id/forgot_password"
+        android:icon="@mipmap/ic_account_circle_grey600_24dp"
+        android:title="@string/forgot_password"/>
+
+    <header
+        android:id="@+id/change_city"
+        android:icon="@mipmap/ic_location_city_grey600_24dp"
+        android:title="@string/change_city"/>
+
+    <header
+        android:id="@+id/support"
+        android:icon="@mipmap/ic_info_grey600_24dp"
+        android:title="@string/support"/>
+
+</preference-headers>

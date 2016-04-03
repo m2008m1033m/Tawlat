@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="expandable_end_padding">20dp</dimen>
+    <dimen name="social_dimen">30dp</dimen>
+    <dimen name="social_padding">15dp</dimen>
+    <dimen name="actionbar_padding">24dp</dimen>
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:id="@+id/ma_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/circle"
+                android:gravity="center">
+
+                <com.tawlat.customViews.RoundImageView
+                    android:id="@+id/user_photo"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/no_avatar"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textColor="@color/black_light"
+                android:textSize="16sp"
+
+                />
+
+            <!--Earned balance section-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/total_point_balance"
+                        android:textColor="@color/black_light"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/balance"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/orange_dark"
+                        android:textSize="35sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--Earned points section-->
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/total_points_balance"
+                            android:textColor="@color/black_light"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:id="@+id/points"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/orange_dark"
+                            android:textSize="35sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--Earned points section-->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/upcoming_bookings_container"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/checked_out_reservations"
+                            android:textColor="@color/black_light"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:id="@+id/reservations"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/orange_dark"
+                            android:textSize="35sp"
+                            android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/edit_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/orangebutton"
+        android:text="@string/edit_profile"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+
+</RelativeLayout>
